@@ -41,3 +41,18 @@ class Solution {
     }
 }
 ```
+# [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/)
+这道题目同样是in-place地处理array, 在循环中已经处理过的前面的数组，可以用后面的去覆盖。还有就是注意一下sorted这个特点，我时常会忽略sorted后的数组有多麽多骚操作
+```java
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        int idx = 0;
+        for(int num:nums){
+            if(idx<2||num>nums[idx-2])
+                nums[idx++]=num;
+        }
+        return idx;
+    }
+}
+```
+
