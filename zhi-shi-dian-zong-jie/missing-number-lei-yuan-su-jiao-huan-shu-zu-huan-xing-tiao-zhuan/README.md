@@ -1,4 +1,4 @@
-# Missing Number 类，元素交换，数组环形跳转
+# Missing Number 类，元素交换，数组环形跳转, Duplicate
 
 [556. Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii/description/)
 
