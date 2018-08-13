@@ -1,7 +1,3 @@
----
-description: 对撞型指针的本质是，不需要扫描多余的状态。在两边指针的判断之后，可以直接跳过其中一个指针与所有另外一面 index 组成的 pair.
----
-
 # 对撞型，water/sum类
 
 ## [Triangle Count](http://www.lintcode.com/en/problem/triangle-count/)

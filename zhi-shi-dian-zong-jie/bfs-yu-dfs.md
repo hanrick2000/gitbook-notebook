@@ -1,7 +1,3 @@
----
-description: DFS用栈（既是递归）BFS用队列
----
-
 # BFS与DFS
 
 ## [515. Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/)

@@ -1,7 +1,3 @@
----
-description: 'https://mnmunknown.gitbooks.io/algorithm-notes/content/missing_number_lei.html'
----
-
 # Missing Number 类，元素交换，数组环形跳转
 
 [556. Next Greater Element III](https://leetcode.com/problems/next-greater-element-iii/description/)

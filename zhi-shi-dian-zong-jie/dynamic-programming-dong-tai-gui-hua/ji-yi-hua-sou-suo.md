@@ -1,7 +1,3 @@
----
-description: 记忆化搜是一种自顶向下的做法，往往是调用递归，更像是对DFS解法的一种优化。他与DP的具体区别还需要总结
----
-
 # 记忆化搜索 （待续）
 
 [http://happylcj.github.io/2015/08/04/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2%E4%B8%93%E9%A2%98%E8%AE%AD%E7%BB%83/](http://happylcj.github.io/2015/08/04/%E8%AE%B0%E5%BF%86%E5%8C%96%E6%90%9C%E7%B4%A2%E4%B8%93%E9%A2%98%E8%AE%AD%E7%BB%83/)

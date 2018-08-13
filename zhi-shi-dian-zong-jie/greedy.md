@@ -1,7 +1,3 @@
----
-description: 之前看到文章说其实很少会用贪心的方法去解决问题，但是我最近遇到了很多问题，他们感觉都是利用了贪心的思想，我把他们整理到这里
----
-
 # Greedy
 
 ## [871. Minimum Number of Refueling Stops](https://leetcode.com/problems/minimum-number-of-refueling-stops/description/)

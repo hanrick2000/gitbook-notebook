@@ -1,7 +1,3 @@
----
-description: 两种典型的处理环形数组的方法
----
-
 # circular array，环形数组
 
 ## [503. Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/discuss/98262/Typical-ways-to-solve-circular-array-problems.-Java-solution.)

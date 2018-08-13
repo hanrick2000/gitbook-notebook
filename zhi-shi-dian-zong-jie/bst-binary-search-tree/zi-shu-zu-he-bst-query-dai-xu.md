@@ -1,7 +1,3 @@
----
-description: 'Java 带泛型的 Collections 确实是可以放 null 的， 比如 Queue, List...'
----
-
 # 子树组合， BST query（待续, 还有两个会员题）
 
 ## [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)
