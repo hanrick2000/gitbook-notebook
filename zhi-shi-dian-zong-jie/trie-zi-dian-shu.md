@@ -1,4 +1,4 @@
-# Trie, 字典树
+# Trie, 字典树\(待续\)
 
 也先贴一个[CSDN](https://blog.csdn.net/v_july_v/article/details/6897097)的帖子吧，不光讲了Trie，还有后缀树的相关内容。
 
@@ -190,6 +190,166 @@ public class Trie {
  * obj.insert(word);
  * boolean param_2 = obj.search(word);
  * boolean param_3 = obj.startsWith(prefix);
+ */
+```
+
+## [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/)
+
+如果这道题目没有"."的前缀查询这个不确定因素，直接使用hashmap就可以了。
+
+ 因为没有 “前缀查询” 这个可以明显区分 trie 和 hashmap 查询性能的操作。
+
+Tries的构造，既可以使用array，又可以使用HashMap。
+
+这道题目同样可以使用两种做法，同样的代码逻辑，把 map 由 HashMap 换成 array 就过了，说明速度上的差距啊。
+
+* **HashMap trie:**
+  * 优点
+    * 支持所有 Character
+    * 相对更省空间
+  * 缺点
+    * 查询时间相对长
+    * 尤其是有 wildcard 做 DFS 时
+* **Array trie:**
+  * 优点
+    * 查询速度快，尤其是有 wildcard 做 DFS 时
+  * 缺点
+    * 每个 node 空间占用大
+    * 比较依赖指定字符集，比如 'a-z' 这种
+
+#### LeetCode OJ 事实说明，这题更适合用 array trie 去解，也算是一个根据输入信息选择合适implementation 的好例子，同样也可以推广到 union-find 的两种 implementation. {#leetcode-oj-事实说明，这题更适合用-array-trie-去解，也算是一个根据输入信息选择合适implementation--的好例子，同样也可以推广到-union-find-的两种-implementation}
+
+### hash map版本
+
+```java
+public class WordDictionary {
+    private class TrieNode{
+        Character chr;
+        HashMap<Character, TrieNode> map;
+        boolean isWord;
+
+        public TrieNode(){
+            map = new HashMap<Character, TrieNode>();
+        }
+        public TrieNode(char chr){
+            this.chr = chr;
+            map = new HashMap<Character, TrieNode>();
+            isWord = false;
+        }
+    }
+
+    TrieNode root = new TrieNode();
+
+    // Adds a word into the data structure.
+    public void addWord(String word) {
+        TrieNode cur = root;
+        for(int i = 0; i < word.length(); i++){
+            char chr = word.charAt(i);
+            if(!cur.map.containsKey(chr)){
+                cur.map.put(chr, new TrieNode(chr));
+            }
+            cur = cur.map.get(chr);
+        }
+        cur.isWord = true;
+    }
+
+    // Returns if the word is in the data structure. A word could
+    // contain the dot character '.' to represent any one letter.
+    public boolean search(String word) {
+        return search(word, 0, root);
+    }
+
+    public boolean search(String word, int index, TrieNode node){
+        if(index == word.length()) return node.isWord;
+        char chr = word.charAt(index);
+
+        if(chr == '.'){
+            Set<Character> keySet = node.map.keySet();
+            for(Character next : keySet){
+                if(search(word, index + 1, node.map.get(next))) return true;
+            }
+            return false;
+        } else {
+            if(!node.map.containsKey(chr)) {
+                return false;
+            } else {
+                return search(word, index + 1, node.map.get(chr));
+            }
+        }
+    }
+}
+```
+
+### Array版本
+
+```java
+
+class WordDictionary {
+    
+    private class TrieNode{
+    public boolean isWord;
+    public char val;
+    public TrieNode[] children = new TrieNode[26];
+    public TrieNode(){};
+    public TrieNode(char c){
+        TrieNode node = new TrieNode();
+        node.val = c;
+    }
+}
+    
+    private TrieNode root;
+    /** Initialize your data structure here. */
+    public WordDictionary() {
+        root = new TrieNode();
+        root.val = ' ';
+    }
+    
+    /** Adds a word into the data structure. */
+    public void addWord(String word) {
+        TrieNode cur = root;
+        for(int i=0;i<word.length();i++){
+            char tmp = word.charAt(i);
+            
+            if(cur.children[tmp-'a']==null){
+                cur.children[tmp-'a'] = new TrieNode(tmp);
+            }
+            cur = cur.children[tmp-'a'];
+        }
+        cur.isWord = true;
+    }
+    
+    /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */
+    public boolean search(String word) {
+        return search(word, 0, root);
+    }
+    
+    private boolean search(String word, int index, TrieNode node){
+        if(index==word.length()) return node.isWord;
+        char temp = word.charAt(index);
+        int chrIndex = temp - 'a';
+        
+        if(temp == '.'){
+            for(int i = 0; i < 26; i++){
+                if(node.children[i] != null){
+                    if(search(word, index + 1, node.children[i])) return true;
+                }
+            }
+            return false;
+        } else {
+            if(node.children[chrIndex] == null) {
+                return false;
+            } else {
+                return search(word, index + 1, node.children[chrIndex]);
+            }
+        }
+    }
+}
+
+/**
+ * Your WordDictionary object will be instantiated and called as such:
+ * WordDictionary obj = new WordDictionary();
+ * obj.addWord(word);
+ * boolean param_2 = obj.search(word);
  */
 ```
 
