@@ -10,6 +10,7 @@
     * [对原序列排序并记录下标（待续）](zhi-shi-dian-zong-jie/pai-xu/dui-yuan-xu-lie-pai-xu-bing-ji-lu-xia-biao-dai-xu.md)
   * [LinkedList 链表](zhi-shi-dian-zong-jie/linkedlist-lian-biao/README.md)
     * [LinkedList, 反转与删除](zhi-shi-dian-zong-jie/linkedlist-lian-biao/linkedlist-fan-zhuan-yu-shan-chu.md)
+    * [Linked List杂题](zhi-shi-dian-zong-jie/linkedlist-lian-biao/linked-list-za-ti.md)
   * [Greedy](zhi-shi-dian-zong-jie/greedy.md)
   * [String, 字符串](zhi-shi-dian-zong-jie/string-zi-fu-chuan/README.md)
     * [substring 问题](zhi-shi-dian-zong-jie/string-zi-fu-chuan/substring-wen-ti.md)
