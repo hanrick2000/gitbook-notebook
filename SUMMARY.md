@@ -68,6 +68,7 @@
   * [给int数据后面加一个“”就可以变成String](yi-xie-ji-qiao/gei-int-shu-ju-hou-mian-jia-yi-ge-jiu-ke-yi-bian-cheng-string.md)
   * [circular array，环形数组](yi-xie-ji-qiao/circular-array-huan-xing-shu-zu.md)
   * [用long代替int来处理overflow](yi-xie-ji-qiao/yong-long-dai-ti-int-lai-chu-li-overflow.md)
+  * [frequency问题](yi-xie-ji-qiao/frequency-wen-ti.md)
 * [Java](java/README.md)
   * [Immutable & Mutable](java/immutable-and-mutable.md)
 * [面试技巧](mian-shi-ji-qiao.md)
