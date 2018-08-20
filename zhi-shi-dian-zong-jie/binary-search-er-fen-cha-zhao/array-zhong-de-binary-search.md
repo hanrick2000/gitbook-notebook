@@ -1,5 +1,51 @@
 # Array中的Binary Search（待续）
 
+## Arrays.binarySearch\(\)的用法
+
+```java
+import java.util.Arrays;
+
+public class Arraydemo1 {
+    public static void main (String [] args){
+        //定义一个int型的数组
+        int []arr ={8,1,2,5,4,9};
+
+        System.out.println("toString:"+Arrays.toString(arr));
+        //调用Arrays的排序方法
+        Arrays.sort(arr);
+        System.out.println("toString:"+Arrays.toString(arr));
+        System.out.println("--------------------------------");
+        System.out.println("binarySearch:"+Arrays.binarySearch(arr, 8));//4
+        System.out.println("binarySearch:"+Arrays.binarySearch(arr, 26));//-7
+        System.out.println("binarySearch:"+Arrays.binarySearch(arr, 6));//-5
+        System.out.println("binarySearch:"+Arrays.binarySearch(arr, 0));//-1
+    }
+
+}
+
+结果:
+
+排序前:[8, 1, 2, 5, 4, 9]
+排序后:[1, 2, 4, 5, 8, 9]
+--------------------------------
+关键字8的返回值是:4
+关键字26的返回值是:-7
+关键字6的返回值是:-5
+关键字0的返回值是:-1
+
+分析:
+ 当我们查找的关键字是8在该数组中,则返回的结果是该数组排好序之后的下标4;(找到关键字索引从0开始)
+ 接着我们查找关键字26,我们发现这个关键字并不在该数组中,并且26比数组中的所有元素都大,所以返回值是数组length+1,也就是6+1=7;  (没有找到关键字索引从1开始）
+ 接着我们查找关键字6,由于排好序的数组中第一个大于6的数是8所以返回值就是8所在的索引5;
+ (没有找到关键字索引从1开始）
+ 接着我们查找关键字0,由于在该数组中比0稍大的数是1,则返回1的索引1;(没有找到关键字索引从1开始）
+
+ 之所以计算插入点值时索引要从1开始算，是因为-0=0，如果从0开始算，那么上面例子中关键字2和关键字4的返回值就一样了。
+
+这篇博客我是参考了下面这个兄弟的博客园的总结才明白的:
+[参考原文]( http://www.cnblogs.com/qingergege/p/5658292.html)
+```
+
 ## [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
 这道题虽然和常规的Binary Search不太一样，但是思考之后，寻找单调区间的思路是一样的
