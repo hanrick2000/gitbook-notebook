@@ -49,6 +49,7 @@
   * [Two Pointer, 双指针](zhi-shi-dian-zong-jie/two-pointer-shuang-zhi-zhen/README.md)
     * [滑动窗口类 （待续）](zhi-shi-dian-zong-jie/two-pointer-shuang-zhi-zhen/hua-dong-chuang-kou-lei-dai-xu.md)
     * [对撞型，water/sum类](zhi-shi-dian-zong-jie/two-pointer-shuang-zhi-zhen/dui-zhuang-xing-watersum-lei.md)
+    * [滑动窗口，substring/subArray类（待续）](zhi-shi-dian-zong-jie/two-pointer-shuang-zhi-zhen/hua-dong-chuang-kou-substringsubarray-lei-dai-xu.md)
   * [Missing Number 类，元素交换，数组环形跳转, Duplicate](zhi-shi-dian-zong-jie/missing-number-lei-yuan-su-jiao-huan-shu-zu-huan-xing-tiao-zhuan/README.md)
     * [Missing Number](zhi-shi-dian-zong-jie/missing-number-lei-yuan-su-jiao-huan-shu-zu-huan-xing-tiao-zhuan/missing-number.md)
   * [Trie, 字典树\(待续\)](zhi-shi-dian-zong-jie/trie-zi-dian-shu.md)
