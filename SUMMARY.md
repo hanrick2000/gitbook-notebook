@@ -72,5 +72,6 @@
   * [frequency问题](yi-xie-ji-qiao/frequency-wen-ti.md)
 * [Java](java/README.md)
   * [Immutable & Mutable](java/immutable-and-mutable.md)
+  * [Abstract VS Interface](java/abstract-vs-interface.md)
 * [面试技巧](mian-shi-ji-qiao.md)
 
