@@ -1,5 +1,7 @@
 # DFS flood filling（待续）
 
+DFS filling其实也就是DFS+染色的一种思想
+
 ## [733. Flood Fill](https://leetcode.com/problems/flood-fill/description/)
 
 这道题目简直就是这个专题的标志例题，其实做法很简单
