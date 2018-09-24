@@ -3,6 +3,8 @@
 * [Initial page](README.md)
 * [知识点总结](zhi-shi-dian-zong-jie/README.md)
   * [哈希](zhi-shi-dian-zong-jie/ha-xi.md)
+  * [Map](zhi-shi-dian-zong-jie/map.md)
+  * [TreeMap](zhi-shi-dian-zong-jie/treemap.md)
   * [Priority Queue/Heap](zhi-shi-dian-zong-jie/priority-queue-heap.md)
   * [BFS与DFS](zhi-shi-dian-zong-jie/bfs-yu-dfs.md)
   * [排序](zhi-shi-dian-zong-jie/pai-xu/README.md)
