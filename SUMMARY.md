@@ -83,5 +83,8 @@
   * [Immutable & Mutable](java/immutable-and-mutable.md)
   * [Abstract VS Interface](java/abstract-vs-interface.md)
 * [面试技巧](mian-shi-ji-qiao.md)
+* [面经](mian-jing.md)
+* [FB](fb.md)
+* [Intersection of Two Arrays](intersection-of-two-arrays.md)
 * [经验总结](jing-yan-zong-jie.md)
 
