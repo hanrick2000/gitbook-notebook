@@ -1,6 +1,6 @@
 # Evolve from recursion to dp, 尾递归
 
-{% embed data="{\"url\":\"https://leetcode.com/problems/decode-ways/discuss/30451/Evolve-from-recursion-to-dp\",\"type\":\"link\",\"title\":\"Decode Ways - LeetCode\",\"description\":\"Can you solve this problem? 🤔\",\"icon\":{\"type\":\"icon\",\"url\":\"https://leetcode.com/favicon-192x192.png\",\"width\":192,\"height\":192,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://leetcode.com/static/images/LeetCode\_Sharing.png\",\"width\":500,\"height\":260,\"aspectRatio\":0.52}}" %}
+{% embed url="https://leetcode.com/problems/decode-ways/discuss/30451/Evolve-from-recursion-to-dp" %}
 
 上面这个帖子介绍了从递归到DP的思路流程，写的非常好：
 
