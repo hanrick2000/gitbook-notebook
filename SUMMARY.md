@@ -75,6 +75,7 @@
 * [Key Ability](key-ability/README.md)
   * [接下来要学习](key-ability/jie-xia-lai-yao-xue-xi.md)
 * [一些技巧](yi-xie-ji-qiao/README.md)
+  * [用两个queue，分别记录位置和值](yi-xie-ji-qiao/yong-liang-ge-queue-fen-bie-ji-lu-wei-zhi-he-zhi.md)
   * [过两（N）次](yi-xie-ji-qiao/guo-liangnci.md)
   * [Majority Element,Moore's Voting Algorithm](yi-xie-ji-qiao/majority-element-moores-voting-algorithm.md)
   * [给字符串加pandle（待续）](yi-xie-ji-qiao/gei-zi-fu-chuan-jia-pandle-dai-xu.md)

@@ -1,12 +1,12 @@
 # Undirected Graph, BFS
 
-#### directed graph BFS 里靠 indegree = 0 判断加入队列； {#directed-graph-bfs-里靠-indegree--0-判断加入队列；}
+#### directed graph BFS 里靠 indegree = 0 判断加入队列； <a id="directed-graph-bfs-&#x91CC;&#x9760;-indegree--0-&#x5224;&#x65AD;&#x52A0;&#x5165;&#x961F;&#x5217;&#xFF1B;"></a>
 
-#### undirected graph BFS 里靠 degree = 0 判断加入队列； {#undirected-graph-bfs-里靠-degree--0-判断加入队列；}
+#### undirected graph BFS 里靠 degree = 0 判断加入队列； <a id="undirected-graph-bfs-&#x91CC;&#x9760;-degree--0-&#x5224;&#x65AD;&#x52A0;&#x5165;&#x961F;&#x5217;&#xFF1B;"></a>
 
 通常情况下，有向图只算一次degree，而无向图算两次
 
-### [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) {#graph-valid-tree}
+### [Graph Valid Tree](https://leetcode.com/problems/graph-valid-tree/) <a id="graph-valid-tree"></a>
 
 这道题目BFS与DFS都可以做
 

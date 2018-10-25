@@ -88,7 +88,7 @@ class Solution {
 }
 ```
 
-#### [Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/) {#closest-binary-search-tree-value}
+#### [Closest Binary Search Tree Value](https://leetcode.com/problems/closest-binary-search-tree-value/) <a id="closest-binary-search-tree-value"></a>
 
-#### [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/) {#closest-binary-search-tree-value-ii}
+#### [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/) <a id="closest-binary-search-tree-value-ii"></a>
 

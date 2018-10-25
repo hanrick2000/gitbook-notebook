@@ -2,7 +2,7 @@
 
 解决这一类问题的关键应该就是Escape字符
 
-#### [Escape ](https://en.wikipedia.org/wiki/Escape_character)符的定义是："An escape character is a character which invokes an alternative interpretation on subsequent characters in a character sequence." {#escape-符的定义是：an-escape-character-is-a-character-which-invokes-an-alternative-interpretation-on-subsequent-characters-in-a-character-sequence}
+#### [Escape ](https://en.wikipedia.org/wiki/Escape_character)符的定义是："An escape character is a character which invokes an alternative interpretation on subsequent characters in a character sequence." <a id="escape-&#x7B26;&#x7684;&#x5B9A;&#x4E49;&#x662F;&#xFF1A;an-escape-character-is-a-character-which-invokes-an-alternative-interpretation-on-subsequent-characters-in-a-character-sequence"></a>
 
 ## [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/)
 

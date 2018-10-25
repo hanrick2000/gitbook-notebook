@@ -2,7 +2,7 @@
 
 图的赋值其实都是reference的引用，即他是mutable的。所以在内部直接复制也无妨
 
-### [Clone Graph](https://leetcode.com/problems/clone-graph/) {#clone-graph}
+### [Clone Graph](https://leetcode.com/problems/clone-graph/) <a id="clone-graph"></a>
 
 先用一个 getNodes 函数返回所有的节点\(因为函数就给了一个\)，在返回的时候直接 new ArrayList&lt;&gt;\(set\) 调用 Collection constructor.
 
@@ -58,7 +58,7 @@ public class Solution {
 }
 ```
 
-### [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) {#copy-list-with-random-pointer}
+### [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) <a id="copy-list-with-random-pointer"></a>
 
 链表也是图啊，就是这么简单，轻松，愉快~~
 

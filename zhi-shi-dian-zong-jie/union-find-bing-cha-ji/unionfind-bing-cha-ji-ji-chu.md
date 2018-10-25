@@ -95,7 +95,7 @@ public class WeightedQuickUnionPathCompressionUF {
 
 ### [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 
-#### 其实我们建的是对于每一个元素的 1-1 mapping，或者说是一个 元素之间的 graph，表示 join 关系。 {#其实我们建的是对于每一个元素的-1-1-mapping，或者说是一个-元素之间的-graph，表示-join-关系。}
+#### 其实我们建的是对于每一个元素的 1-1 mapping，或者说是一个 元素之间的 graph，表示 join 关系。 <a id="&#x5176;&#x5B9E;&#x6211;&#x4EEC;&#x5EFA;&#x7684;&#x662F;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;-1-1-mapping&#xFF0C;&#x6216;&#x8005;&#x8BF4;&#x662F;&#x4E00;&#x4E2A;-&#x5143;&#x7D20;&#x4E4B;&#x95F4;&#x7684;-graph&#xFF0C;&#x8868;&#x793A;-join-&#x5173;&#x7CFB;&#x3002;"></a>
 
 中间有一个 \[2147483646,-2147483647,0,2,2147483644,-2147483645,2147483645\] 的 test case 始终出 bug，把 find 函数的返回 type 从 int 改到 Integer 就好了。
 
